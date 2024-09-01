@@ -113,3 +113,40 @@ mvn test
 
 **LibraryTest.java**: Contains unit tests to validate the functionality of the Library class.
 
+**Test Report**
+A test report summarizes the results of running your test cases, including information about passed and failed tests. Here's how you can generate and view a test report in a Java project using Gradle or Maven, which are common build tools used in Java projects.
+
+**Using Gradle**
+Gradle generates test reports automatically. Here’s how you can view them:
+
+1) **Run Tests:**
+
+In your terminal, navigate to your project directory and run:
+
+./gradlew test
+
+This command will execute all the test cases defined in your project.
+
+2) **Locate the Test Report:**
+
+After running the tests, Gradle generates a test report in the build/reports/tests directory. The report is usually in HTML format and can be opened with any web browser.
+
+**To find the test report:**
+
+Go to build/reports/tests/test in your project directory.
+
+Open index.html in a web browser to view the detailed test report.
+
+The report provides:
+
+Summary of all test results.
+
+Details about each test case, including which passed and which failed.
+
+Stack traces for failed tests to help diagnose issues.
+
+3) **Example Command to View Reports:**
+
+If you want to view the HTML report directly from the terminal, you can use:
+
+start build/reports/tests/test/index.html  
